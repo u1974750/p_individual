@@ -1,4 +1,3 @@
-
 #title{
 	font-size: 45px;
 	line-height: 50px;
@@ -14,32 +13,8 @@
 	width: 300px;
 	height: 75px;
 	font-size: 17px;
-	margin-top: 30px;
+	margin-top: 15px;
 	font-family:'Courier New', Courier, monospace;
-}
-
-p{
-	text-align: center;
-	font-family: 'Courier New', Courier, monospace;
-}
-
-button{
-	border-radius: 10px;
-	border: 2px solid rgb(184, 197, 197);
-	background:azure;
-	padding:15px 25px;
-	cursor:pointer;
-	box-shadow: 0 9px #999
-}
-
-button.menu-object:active{
-	background-color: rgb(209, 226, 226);
-	box-shadow: 0 5px #666;
-	transform: translateY(4px);
-}
-
-button.menu-object:hover:not(:active){
-	background-color: rgb(209, 226, 226);
 }
 
 *{
@@ -54,7 +29,7 @@ button.menu-object:hover:not(:active){
 	display:grid;
 	grid-template-areas:
 		'header header header header header header' 
-		'left left middle middle right right' 
+		'left left left middle right right' 
 		'footer footer footer footer footer footer'; 
 }
 .left,.middle,.right{
@@ -84,4 +59,27 @@ button.menu-object:hover:not(:active){
       'footer footer footer footer footer footer';
 	}
 }
+.card{
+    padding-right: 10px;
+    padding-left: 10px;
+}
 
+button{
+	border-radius: 10px;
+	border: 2px solid rgb(184, 197, 197);
+	background:azure;
+	padding:15px 25px;
+	cursor:pointer;
+	box-shadow: 0 9px #999;
+    margin-top: 20px;
+}
+
+button.goBack:active{
+	background-color: rgb(209, 226, 226);
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+button.goBack:hover:not(:active){
+	background-color: rgb(209, 226, 226);
+}

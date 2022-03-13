@@ -1,20 +1,30 @@
 <!DOCTYPE html> 
 <html>
 	<head>
-		<link rel="stylesheet" href="../styles/main.css">
+		<link rel="stylesheet" href="../styles/game.css">
 		<script src="../js/game_controller.js"></script>
 		<script src="../js/loader.js"></script>
 		<title> My first game - Game </title>
 	</head>
 	<body>
-		<p class="menu-object" id="title">Memory game</p>
-		<div>
-			<!-- this is a test -->
-			<img src="../resources/cb.png" onclick="items[0].do_click()">
-			<img src="../resources/tb.png" onclick="items[1].do_click()">
-			<img src="../resources/tb.png" onclick="items[2].do_click()">
-			<img src="../resources/cb.png" onclick="items[3].do_click()">
+		<div class="grid-container">
+			<div class="header">
+				<p class="menu-object" id="title">Memory game</p>
+			</div>
+			
+			<div class="left"></div>
+			<div class="middle">		
+				<img class="card" src="../resources/cb.png" onclick="items[0].do_click()">
+				<img  class="card" src="../resources/tb.png" onclick="items[1].do_click()">
+				<img  class="card"src="../resources/tb.png" onclick="items[2].do_click()">
+				<img  class="card" src="../resources/cb.png" onclick="items[3].do_click()">
+			</div>  
+
+			<div class="right"></div>
+	
+			<div class="footer">
+				<button class="goBack" onclick= "loadpage('../index.html')">GoToMenu</button>
+			</div>
 		</div>
-		<a class="menu-object" href="../">GoToMenu</a>
-	</body>
+	</body>	
 </html>
