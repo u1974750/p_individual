@@ -8,15 +8,21 @@
 		<title> My first game - Menu </title>
 	</head>
 	<body>
-		<p class="menu-object" id="title">Memory menu</p>
-		<button class="menu-object" onclick="start_game()"> 
-			Start Game 
-		</button>
-		<button class="menu-object" onclick="options()"> 
-			Options 
-		</button>
-		<button class="menu-object" onclick="exit()"> 
-			Exit 
-		</button>
+		<div class="grid-container">
+			<div class="header">
+				<p class="menu-object" id="title">Memory menu</p>
+			</div>
+			
+			<div class="left"></div>
+			<div class="middle">
+				<button class="menu-object" onclick="start_game()">Start Game</button>
+				<button class="menu-object" onclick="options()">Options</button>
+				<button class="menu-object"  onclick = "loadpage('../index.html')">Exit </button>
+			</div>  
+			<div class="right"></div>
+
+			<div class="footer"></div>
+
+		</div>
 	</body>
 </html>

@@ -1,7 +1,9 @@
 
 #title{
-	font-size: 26px;
-	line-height: 75px;
+	font-size: 45px;
+	line-height: 50px;
+	font-family: 'Courier New', Courier, monospace;
+	margin-top:20px;
 }
 
 .menu-object{
@@ -11,12 +13,13 @@
 	width: 300px;
 	height: 75px;
 	font-size: 17px;
-	margin-top: 10px;
+	margin-top: 15px;
+	font-family:'Courier New', Courier, monospace;
 }
 
 p{
 	text-align: center;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-family: 'Courier New', Courier, monospace;
 }
 
 button{
@@ -26,7 +29,6 @@ button{
 	padding:15px 25px;
 	cursor:pointer;
 	box-shadow: 0 9px #999
-
 }
 
 button.menu-object:active{
@@ -39,3 +41,45 @@ button.menu-object:hover:not(:active){
 	background-color: rgb(209, 226, 226);
 }
 
+*{
+	box-sizing: border-box;
+}
+.header{
+	grid-area: header;
+	padding: 30px;
+	text-align: center;
+}
+.grid-container{
+	display:grid;
+	grid-template-areas:
+		'header header header header header header' 
+		'left middle middle middle middle right' 
+		'footer footer footer footer footer footer'; 
+}
+.left,.middle,.right{
+	padding:10px;
+}
+.left{
+	grid-area: left;
+}
+.middle{
+	grid-area: middle;
+}
+.right{
+	grid-area: right;
+}
+.footer{
+	grid-area: footer;
+	padding: 10px;
+	text-align: center;
+}
+@media (max-width: 600px) {
+	.grid-container{
+		grid-template-areas: 
+      'header header header header header header' 
+      'left left left left left left' 
+      'middle middle middle middle middle middle' 
+      'right right right right right right' 
+      'footer footer footer footer footer footer';
+	}
+}
