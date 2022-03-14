@@ -9,6 +9,7 @@ input[type=number]{
 #title{
 	font-size: 26px;
 	line-height: 75px;
+	font-family: 'Courier New', Courier, monospace;
 }
 
 .menu-object{
@@ -23,17 +24,26 @@ input[type=number]{
 
 p{
 	text-align: center;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+button{
+	border-radius: 10px;
+	border: 2px solid rgb(184, 197, 197);
+	background:azure;
+	padding:15px 25px;
+	cursor:pointer;
+	box-shadow: 0 9px #999;
+	font-family: 'Courier New', Courier, monospace;
 }
 
 button.menu-object:active{
-	font-size: 18px;
-	width: 275px;
-	height: 70px;
+	background-color: rgb(209, 226, 226);
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
 }
 
 button.menu-object:hover:not(:active){
-	font-size: 22px;
-	width: 325px;
-	height: 85px;
+	background-color: rgb(209, 226, 226);
 }
 
